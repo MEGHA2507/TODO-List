@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TODO LIST</title>
+</head>
+
+<body>
+    <div class="todo-container">
+        <h1>TODO LIST</h1>
+        <input type="text" placeholder="Enter the task to complete" id="input-task" value="" onkeypress="pressEnter(event)">
+        <button onclick="createLiTaskItem(event)">Add TODO Items</button>
+        <button onclick="removeAllItems(event)">Clear All TODO Items</button>
+        <!-- <input type="text" placeholder="Find Todo Items" id="filter-task" value="" onkeyup="pressFilter(event)">
+        <button onclick="filterTask(event)">Filter TODO List</button> -->
+        <ul class="todo-list hide"></ul>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
