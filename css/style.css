@@ -1,5 +1,5 @@
 body {
-  background-color: #e4e1e1; }
+  background-color: #cef5fa; }
   body .hide {
     display: none; }
   body .show {
@@ -16,7 +16,10 @@ body {
       color: #000;
       text-overflow: ellipsis;
       border: 1px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75); }
       body .todo-container input:hover {
         border: 1px solid #4c055e; }
     body .todo-container button {
@@ -28,12 +31,15 @@ body {
       color: #fff;
       text-align: center;
       border: 0;
+      cursor: pointer;
       border-radius: 50px;
       font-size: 16px;
       line-height: 20px; }
+      body .todo-container button:hover {
+        background-color: #0b0bb3; }
     body .todo-container .todo-list {
       padding: 20px;
-      background-color: #b9b9b9;
+      background-color: #7397ac;
       border-radius: 5px;
       margin: 0 auto; }
       body .todo-container .todo-list li {

@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(228, 225, 225);
+    background-color: #cef5fa;
     .hide {
         display: none;
     }
@@ -20,6 +20,9 @@ body {
             text-overflow: ellipsis;
             border: 1px;
             border-radius: 5px;
+            -webkit-box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75);
             &:hover {
                 border: 1px solid rgb(76, 5, 94);
             }
@@ -33,13 +36,17 @@ body {
             color: #fff;
             text-align: center;
             border: 0;
+            cursor: pointer;
             border-radius: 50px;
             font-size: 16px;
             line-height: 20px;
+            &:hover {
+                background-color: rgb(11, 11, 179);
+            }
         }
         .todo-list {
             padding: 20px;
-            background-color: rgb(185, 185, 185);
+            background-color: rgb(115, 151, 172);
             border-radius: 5px;
             margin: 0 auto;
             li {

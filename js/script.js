@@ -32,12 +32,19 @@ let todoListStack = document.querySelector('.todo-list');
 todoListStack.addEventListener('click', removeTask);
 
 function removeTask(event) {
+    let todoListStack = document.querySelector('.todo-list');
     let deleteIcon = event.target.parentElement.classList.contains('task-item');
+
 
     if (deleteIcon) {
         event.target.parentElement.remove();
-    }
+        console.log(todoListStack.innerHTML);
 
+        if (todoListStack.innerHTML == '') {
+            todoListStack.classList.remove('show');
+            todoListStack.classList.add('hide');
+        }
+    }
 }
 
 function removeAllItems(event) {
